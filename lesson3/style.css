@@ -1,0 +1,91 @@
+h1 {
+    text-align: right;
+    color:orange;
+}
+
+p {
+    text-align:left;
+}
+p:first-letter {
+    color:red;
+    font-weight:bold;
+}
+em {
+    background-color:green;
+    color:white;
+}
+#allotment h2{
+    color:orange;
+}
+#allotment .fruits-list {
+    color:grey;
+}
+#allotment .vegetables-list {
+    color:red;
+}
+#warehouse h2 {
+    color:blue;
+}
+#warehouse .fruits-list {
+    color:green;
+}
+#warehouse .vegetables-list {
+    color:red;
+}
+.students-table thead {
+    font-weight:bold;
+    text-align:center;
+}
+.students-table tbody tr>td:first-child {
+    color:orange;
+}
+.students-table tbody tr>td:not(:first-child) {
+    text-align:center;
+    color:white;
+    background-color:green;
+}h1 {
+     text-align: right;
+     color:orange;
+ }
+
+p {
+    text-align:left;
+}
+p:first-letter {
+    color:red;
+    font-weight:bold;
+}
+em {
+    background-color:green;
+    color:white;
+}
+#allotment h2{
+    color:orange;
+}
+#allotment .fruits-list {
+    color:grey;
+}
+#allotment .vegetables-list {
+    color:red;
+}
+#warehouse h2 {
+    color:blue;
+}
+#warehouse .fruits-list {
+    color:green;
+}
+#warehouse .vegetables-list {
+    color:red;
+}
+.students-table thead {
+    font-weight:bold;
+    text-align:center;
+}
+.students-table tbody tr>td:first-child {
+    color:orange;
+}
+.students-table tbody tr>td:not(:first-child) {
+    text-align:center;
+    color:white;
+    background-color:green;
+}
