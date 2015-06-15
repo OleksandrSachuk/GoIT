@@ -8,7 +8,9 @@ nav {
 nav li {
     text-align:center;
     line-height:30px;
-    display:inline-block;
+    display:block;
+    float:left;
+    list-style-type:none;
 }
 a {
     color:white;
@@ -19,4 +21,10 @@ a {
 li .current {
     color:grey;
     background-color:white;
+}
+li .clear {
+    clear:both;
+}
+li .more {
+    float:right;
 }
