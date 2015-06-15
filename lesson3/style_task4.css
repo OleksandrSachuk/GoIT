@@ -6,4 +6,5 @@ a[href*="google"]{
 }
 a[target="_blank"]:after {
     content:"\21F1";
+    position:absolute;
 }
