@@ -1,22 +1,28 @@
-nav {
-    weihgt:900px;
-    height:30px;
-    background-color:#8A2BE2;
-    vertical-align:baseline;
-    font: Impact;
-}
-nav li {
+.nav {
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
     text-align:center;
-    line-height:30px;
+    font: Impact;
+    background-color:#8A2BE2;
+}
+.nav ul {
+    width:900px;
+    margin:0 auto;
+}
+.nav li {
+    display:inline;
+    cursor:pointer;
+    font-family:Impact;
+}
+.nav a{
     display:inline-block;
-}
-a {
     color:white;
-    font-weight:bold;
+    text-transform:uppercase;
     text-decoration:none;
-    margin-left:20px;
+    padding:10px;
 }
-li .current {
-    color:grey;
+nav a:hover {
     background-color:white;
+    color:grey;
 }

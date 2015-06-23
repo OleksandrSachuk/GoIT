@@ -5,6 +5,11 @@ a[href*="google"]{
     color:#666;
 }
 a[target="_blank"]:after {
-    content:"\21F1";
+    content: "\21F1";
+    margin-left:5px;
     position:absolute;
+    color:orange;
+    -webkit-transform:rotate(90deg);
+    font-family:Cambia;
+    text-decoration:none!important;
 }

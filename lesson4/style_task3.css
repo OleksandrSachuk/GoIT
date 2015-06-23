@@ -1,0 +1,27 @@
+body>div {
+    width:100%;
+}
+div>div {
+    width:500px;
+    margin:0 auto;
+    font-size:15px;
+    text-transform:uppercase;
+    padding-top:15px;
+}
+a {
+    text-decoration:none;
+    color:#8A2BE2;
+    display:inline-block;
+}
+div .page {
+    padding:3px 5px;
+    border:1px solid grey;
+    border-radius:3px;
+}
+div span {
+    padding:3px;
+}
+div .active.page {
+    background-color:#8A2BE2;
+    color:white;
+}
