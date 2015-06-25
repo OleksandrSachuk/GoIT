@@ -1,0 +1,232 @@
+.blocks>p {
+    text-family:Trebuchet MS;
+    font-weight:bold;
+    font-size:30px;
+    text-transform:uppercase;
+    text-align:center;
+}
+/*First block*/
+.main-blue {
+    display:inline-block;
+    position:relative;
+    z-index:1;
+    width:290px;
+    height:430px;
+    border:1px solid #e8eaec;
+    border-radius:5px;
+    background-color:#ffffff;
+    margin-right:-6px;
+}
+.main-blue>.head {
+    height:60px;
+    background-color:#37c2d3;
+    color:white;
+    text-align:center;
+    text-transform:uppercase;
+    line-height:70px;
+}
+.main-blue>.head p {
+    margin-top:0px;
+    font-family:Trebuchet MS;
+    font-weight:bold;
+    font-size:24px;
+}
+.main-blue>.content {
+    font-family:Trebuchet MS;
+    font-weight:normal;
+    font-size:24px;
+    text-align:center;
+    color:#35495a;
+}
+.main-blue>.content p:first-child {
+    text-transform:uppercase;
+    color:#3f4042;
+}
+.main-blue>.content sup {
+    font-family:Trebuchet MS;
+    font-weight:bold;
+    font-size:36px;
+}
+.main-blue>.content sub {
+    font-family:Trebuchet MS;
+    font-size:18px;
+}
+.main-blue>.list {
+    width:285px;
+    font-family:Trebuchet MS;
+    font-weight:normal;
+    font-size:15px;
+    color:#888c94;
+}
+.main-blue>.list ul {
+    list-style-image: url(arrow.png);
+}
+.main-blue>.list li {
+    width:200px;
+    height:35px;
+    background-color:#edf5fd;
+    list-style-position:inside;
+    margin-left:-20px;
+    margin-top:1px;
+    padding-left:60px;
+}
+.main-blue>button {
+    background-color:#3371a6;
+    color:white;
+    padding:15px 75px;
+    border-radius:10px;
+    font-family:Trebuchet MS;
+    font-weight:bold;
+    font-size:14px;
+    margin-left:20px;
+}
+/*Second block*/
+.main-orange {
+    display:inline-block;
+    position:relative;
+    z-index:2;
+    width:290px;
+    height:460px;
+    border:5px solid #ee8129;
+    border-radius:5px;
+    background-color:#ffffff;
+    margin-right:-6px;
+}
+.main-orange>.head {
+    height:70px;
+    background-color:#ee8129;
+    color:white;
+    text-align:center;
+    text-transform:uppercase;
+    line-height:70px;
+}
+.main-orange>.head p {
+    margin-top:0px;
+    font-family:Trebuchet MS;
+    font-weight:bold;
+    font-size:24px;
+}
+.main-orange>.content {
+    font-family:Trebuchet MS;
+    font-weight:normal;
+    font-size:24px;
+    text-align:center;
+    color:#35495a;
+}
+.main-orange>.content p:first-child {
+    text-transform:uppercase;
+    color:#3f4042;
+}
+.main-orange>.content sup {
+    font-family:Trebuchet MS;
+    font-weight:bold;
+    font-size:36px;
+}
+.main-orange>.content sub {
+    font-family:Trebuchet MS;
+    font-size:18px;
+}
+.main-orange>.list {
+    width:285px;
+    font-family:Trebuchet MS;
+    font-weight:normal;
+    font-size:15px;
+    color:#888c94;
+}
+.main-orange>.list ul {
+    list-style-image: url(arrow.png);
+}
+.list li {
+    width:200px;
+    height:35px;
+    background-color:#edf5fd;
+    list-style-position:inside;
+    margin-left:-20px;
+    margin-top:1px;
+    padding-left:60px;
+}
+.main-orange>button {
+    background-color:#ee8129;
+    color:white;
+    padding:15px 75px;
+    border-radius:10px;
+    font-family:Trebuchet MS;
+    font-weight:bold;
+    font-size:14px;
+    margin-left:20px;
+}
+/*Third block*/
+.main-green {
+    display:inline-block;
+    position:relative;
+    z-index:1;
+    width:290px;
+    height:430px;
+    border:1px solid #e8eaec;
+    border-radius:5px;
+    background-color:#ffffff;
+}
+.main-green>.head {
+    height:60px;
+    background-color:#1cb79a;
+    color:white;
+    text-align:center;
+    text-transform:uppercase;
+    line-height:70px;
+}
+.main-green>.head p {
+    margin-top:0px;
+    font-family:Trebuchet MS;
+    font-weight:bold;
+    font-size:24px;
+}
+.main-green>.content {
+    font-family:Trebuchet MS;
+    font-weight:normal;
+    font-size:24px;
+    text-align:center;
+    color:#35495a;
+}
+.main-green>.content p:first-child {
+    text-transform:uppercase;
+    color:#3f4042;
+}
+.main-green>.content sup {
+    font-family:Trebuchet MS;
+    font-weight:bold;
+    font-size:36px;
+}
+.main-green>.content sub {
+    font-family:Trebuchet MS;
+    font-size:18px;
+}
+.main-green>.list {
+    width:285px;
+    font-family:Trebuchet MS;
+    font-weight:normal;
+    font-size:15px;
+    color:#888c94;
+}
+.main-green>.list ul {
+    list-style-image: url(arrow.png);
+}
+.main-green>.list li {
+    width:200px;
+    height:35px;
+    background-color:#edf5fd;
+    list-style-position:inside;
+    margin-left:-20px;
+    margin-top:1px;
+    padding-left:60px;
+}
+.main-green>button {
+    background-color:#3371a6;
+    color:white;
+    padding:15px 75px;
+    border-radius:10px;
+    font-family:Trebuchet MS;
+    font-weight:bold;
+    font-size:14px;
+    margin-left:20px;
+}
+

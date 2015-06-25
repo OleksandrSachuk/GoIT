@@ -1,0 +1,44 @@
+.nav {
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+    text-align:center;
+    font: Impact;
+    background-color:#8A2BE2;
+}
+.nav ul {
+    width:900px;
+    margin:0 auto;
+}
+.nav li {
+    position:relative;
+    display:inline;
+    cursor:pointer;
+    font-family:Impact;
+    font-weight:normal;
+}
+.nav a{
+    display:inline-block;
+    color:white;
+    text-transform:uppercase;
+    text-decoration:none;
+    padding:10px;
+}
+div.sublist {
+    display:none;
+    position:absolute;
+    background-color:#D3D3D3;
+}
+div.sublist ul li a {
+    margin-left:0px;
+    color:grey;
+    text-transform:uppercase;
+}
+.nav a:hover {
+    background-color:#D3D3D3;
+    color:grey;
+}
+.nav:hover div.sublist {
+    display:block;
+}
+
