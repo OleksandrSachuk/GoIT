@@ -1,0 +1,37 @@
+.main {
+    width:545px;
+    height:55px;
+    background-color:#ffcc66;
+    transition: all 0.3s linear;
+}
+.main::after {
+    content: '';
+    position: absolute;
+    left:553px;
+    top:8px;
+    border: 28px solid transparent;
+    border-left: 28px solid #ffcc66;
+    transition: all 0.3s linear;
+}
+#search {
+    width:450px;
+    margin-top:10px;
+    margin-left:5px;
+    padding:5px;
+    transition: all 0.3s linear;
+}
+button {
+    padding:5px;
+}
+#search-description label {
+    padding-bottom:30px;
+}
+.main:hover {
+    width:745px;
+}
+.main:hover::after {
+    left:753px;
+}
+.main:hover #search {
+    width:650px;
+}
