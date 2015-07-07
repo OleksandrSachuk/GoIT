@@ -1,6 +1,6 @@
 .main {
     width:545px;
-    height:55px;
+    height:60px;
     background-color:#ffcc66;
     transition: all 0.3s linear;
 }
@@ -9,7 +9,7 @@
     position: absolute;
     left:553px;
     top:8px;
-    border: 28px solid transparent;
+    border: 30px solid transparent;
     border-left: 28px solid #ffcc66;
     transition: all 0.3s linear;
 }
@@ -23,8 +23,12 @@
 button {
     padding:5px;
 }
-#search-description label {
+label {
     padding-bottom:30px;
+    display:block;
+    position:absolute;
+    top:46px;
+    left:30px;
 }
 .main:hover {
     width:745px;

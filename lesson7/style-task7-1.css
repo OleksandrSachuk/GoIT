@@ -1,6 +1,5 @@
 .main {
     width:400px;
-    border:1px solid black;
     text-transform:uppercase;
     font-size:60px;
     text-shadow: #000 0 0 5px;
@@ -12,38 +11,50 @@ div {
 }
 .line1 {
     font-size:1em;
+    word-spacing: 240px;
 }
 .line2 {
     font-size:0.9em;
+    word-spacing: 89px;
 }
 .line3 {
     font-size:0.8em;
+    word-spacing:37px;
 }
 .line4 {
     font-size:0.7em;
+    word-spacing:22px;
 }
 .line5 {
     font-size:0.6em;
+    word-spacing:27px;
 }
 .line6 {
     font-size:0.6em;
+    word-spacing:12px;
 }
 .line7 {
     font-size:0.5em;
+    word-spacing:18px;
 }
 .line8 {
     font-size:0.4em;
+    word-spacing:14px;
 }
 .line9 {
     font-size:0.3em;
+    word-spacing:20px;
 }
 .line10 {
     font-size:0.2em;
+    word-spacing:16px;
 }
 .line11 {
     font-size:0.2em;
+    word-spacing:16px;
 }.line12 {
      font-size:0.2em;
+     word-spacing:16px;
  }
 .redline {
     border-bottom:1px solid red;

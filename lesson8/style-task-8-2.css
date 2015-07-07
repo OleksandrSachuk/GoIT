@@ -1,7 +1,7 @@
 .main {
     width:545px;
     height:55px;
-    background: linear-gradient(to bottom, #ecbc4d, #ffcc66);
+    background: linear-gradient(to right, #ecbc4d, #ffcc66);
 
     transition: all 0.3s linear;
 }

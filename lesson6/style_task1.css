@@ -16,6 +16,7 @@
     border-radius:5px;
     background-color:#ffffff;
     margin-right:-6px;
+    margin-left: 226px;
 }
 .main-blue>.head {
     height:60px;
@@ -24,6 +25,7 @@
     text-align:center;
     text-transform:uppercase;
     line-height:70px;
+
 }
 .main-blue>.head p {
     margin-top:0px;
@@ -46,6 +48,7 @@
     font-family:Trebuchet MS;
     font-weight:bold;
     font-size:36px;
+    vertical-align:top;
 }
 .main-blue>.content sub {
     font-family:Trebuchet MS;
@@ -121,6 +124,7 @@
     font-family:Trebuchet MS;
     font-weight:bold;
     font-size:36px;
+    vertical-align:top;
 }
 .main-orange>.content sub {
     font-family:Trebuchet MS;
@@ -195,6 +199,7 @@
     font-family:Trebuchet MS;
     font-weight:bold;
     font-size:36px;
+    vertical-align:top;
 }
 .main-green>.content sub {
     font-family:Trebuchet MS;
@@ -228,5 +233,10 @@
     font-weight:bold;
     font-size:14px;
     margin-left:20px;
+}
+.big-letter {
+    color#364959;
+    font-size:72px;
+    font-weight:bold;
 }
 
