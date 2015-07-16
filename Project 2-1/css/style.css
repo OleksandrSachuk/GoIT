@@ -59,15 +59,15 @@ a {
     color: #ffffff;
     padding-left: 10px;
     vertical-align: top;
-
 }
 .connect {
     font-size:13px;
     text-align: left;
     color: #ffffff;
-    line-height: 76px;
-    position: relative;
-    right: -570px;
+    line-height: 80px;
+    float:left;
+    padding-right: 10px;
+
 }
 .social_buttons {
     float: right;
@@ -344,6 +344,7 @@ a {
     height: 190px;
     float:left;
 }
+
 .footer_logo_img {
     margin-top: 50px;
 }
@@ -356,8 +357,8 @@ a {
     vertical-align: top;
     display: inline-block;
     margin-top: 60px;
-    padding-right: 15px;
-    background: url("../img/vertical_line.jpg") no-repeat 100% 50%;
+    padding-right: 10px;
+    background: url("../img/vertical_line.jpg") no-repeat right;
 }
 .footer_connect {
     font-size:13px;
@@ -391,14 +392,279 @@ a {
     right: 25px;
     z-index: 10;
 }
-
-
 /*tablets*/
-@media screen and (min-device-width: 800px) and (max-device-width: 1000px) {
-
+@media (max-width: 999px) {
+    body {
+        max-width: 999px;
+    }
+    .wrapper {
+        max-width: 758px;
+    }
+    /*header*/
+    #header {
+        height: 80px;
+    }
+    .logo {
+        height: 80px;
+        line-height:80px;
+    }
+    /*banner_top*/
+    .banner_top_welcome {
+        font-size: 45px;
+        padding-top: 90px;
+    }
+    #banner_top p {
+        width: 380px;
+        font-size: 25px;
+    }
+    /*form*/
+    #form_top {
+        width: 340px;
+        top: -319px;
+    }
+    #form_top .form_name {
+        font-size: 20px;
+        padding-top: 35px;
+    }
+    #form_top input[type="submit"] {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+    }
+    /*second_block*/
+    .information_block {
+        width: 385px;
+        height: 190px;
+    }
+    .information_block h2 {
+        padding-top: 25px;
+    }
+    /*third - adblock*/
+    #adblock {
+        height: 715px;
+    }
+    #adblock h2 {
+        font-size: 20px;
+        padding-top: 40px;
+    }
+    .small_adblock1, .small_adblock2, .small_adblock3 {
+        width: auto;
+        display: block;
+        text-align: left;
+    }
+    .small_adblock1 img, .small_adblock2 img, .small_adblock3 img {
+        float:left;
+        margin-right: 20px;
+    }
+    /*fourth block*/
+    .fourth_block_header {
+        padding-top: 45px;
+    }
+    .fourth_block_header_text {
+        font-size: 20px;
+    }
+    .fourth_block_header_arrow_right, .fourth_block_header_arrow_left  {
+       margin-right: 0;
+    }
+    .fourth_block_text {
+        width:535px;
+    }
+    /*fifth block*/
+    #fifth_block button {
+        width: 440px;
+    }
+    #fifth_block button span {
+        font-size: 20px;
+    }
+    /*footer*/
+    .copyrights p {
+        width: auto;
+    }
+    .man_photo {
+        right: 0;
+    }
 }
 /*mobile*/
-@media screen and (min-device-width: 320px) and (max-device-width: 800px) {
+@media (max-width: 799px) {
+    body {
+        max-width: 799px;
+    }
+    .wrapper {
+        max-width: 320px;
+    }
+    /*header*/
+    #header {
+        height: 160px;
+    }
+    .logo {
+        width: 100%;
+        height: auto;
+        line-height: normal;
+        text-align: center;
+    }
+    .logo_img {
+        vertical-align: top;
+        padding-top: 15px;
+    }
+    .logo_text {
+        display: block;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .connect {
+        text-align: center;
+        line-height: normal;
+        padding-left: 90px;
+        padding-top: 15px;
+    }
+    .social_buttons {
+        width: 100%;
+        float: right;
+        line-height: 40px;
+        vertical-align: middle;
+    }
+    /*banner_top*/
+    #banner_top {
+        text-align: center;
+    }
+    .banner_top_welcome {
+        font-size: 40px;
+        padding-top: 40px;
+    }
+    #banner_top p {
+        width: 100%;
+        height: auto;
+        font-size: 16px;
+    }
+    /*form*/
+    #form_top {
+        width: 300px;
+        margin: 0 auto;
+        position: absolute;
+        top: -160px;
+    }
 
+    #form_top .form_name {
+        font-size: 20px;
+    }
+    #form_top input, textarea {
+        width: 260px;
+    }
+    #form_top input[type="submit"] {
+        width: 200px;
+        font-size: 20px;
+    }
+    /*second_block*/
+    #second_block {
+        height: 680px;
+        text-align: center;
+    }
+    .information_block {
+        width: 100%;
+        height: auto;
+    }
+    .information_block h2 {
+        padding-top: 415px;
+    }
+    .information_block p {
+        padding-bottom: 40px;
+    }
+
+    /*third - adblock*/
+    #adblock {
+        width: 100%;
+        height: 1425px;
+        text-align: center;
+    }
+    #adblock h2 {
+        font-size: 20px;
+    }
+    .adblock_photo {
+        width: 100%;
+        padding-top: 10px;
+    }
+    .adblock_photo p {
+       padding-bottom: 10px;
+    }
+    .small_adblock1, .small_adblock2, .small_adblock3 {
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin-right: 0;
+        padding-bottom: 10px;
+    }
+    .small_adblock1 img, .small_adblock2 img, .small_adblock3 img {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    /*fourth block*/
+    #fourth_block {
+        height: 500px;
+        text-align: center;
+    }
+    .fourth_block_header_text {
+        display: block;
+        width: 100%;
+        font-size: 20px;
+    }
+    .fourth_block_text {
+        width:100%;
+        text-align: left;
+        padding-top: 40px;
+    }
+    /*fifth block*/
+    #fifth_block {
+        height: 240px;
+        text-align: center;
+    }
+    #fifth_block button {
+        width: 300px;
+        height: 130px;
+        margin-top: 60px;
+        z-index: 30;
+    }
+    #fifth_block button span {
+        font-size: 20px;
+    }
+    /*footer*/
+    #footer {
+        height: 315px;
+    }
+    .footer_logo {
+        width: 100%;
+        height: auto;
+        line-height: normal;
+        text-align: center;
+    }
+    .footer_logo_img {
+        margin-top: 30px;
+    }
+    .footer_logo_text {
+        display: block;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .footer_connect {
+        text-align: center;
+        line-height: normal;
+        padding-left: 90px;
+        padding-top: 15px;
+    }
+    .footer_social_buttons {
+        width: 100%;
+        float: right;
+        line-height: 40px;
+        vertical-align: middle;
+    }
+
+    .man_photo {
+        position: absolute;
+        top:-364px;
+        right: 25px;
+        z-index: 10;
+    }
 }
 
