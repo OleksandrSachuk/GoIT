@@ -246,7 +246,7 @@ a {
     height: 35px;
     margin: 0 auto;
     border: 1px solid #e7e7e7;
-    line-height: 30px;
+    line-height: 28px;
     text-align: center;
     font-size: 50px;
     border-radius: 18px;
@@ -384,7 +384,6 @@ a {
     color: #ffffff;
     margin-top: 10px;
     padding-left: 20px;
-
 }
 .man_photo {
     position: absolute;
@@ -477,8 +476,8 @@ a {
         font-size: 20px;
     }
     /*footer*/
-    .copyrights p {
-        width: auto;
+    .copyrights {
+        width: 60%;
     }
     .man_photo {
         right: 0;
@@ -614,6 +613,10 @@ a {
         text-align: left;
         padding-top: 40px;
     }
+
+    .fourth_block_header_arrow_right, .fourth_block_header_arrow_left  {
+        float: none;
+    }
     /*fifth block*/
     #fifth_block {
         height: 240px;
@@ -631,6 +634,7 @@ a {
     /*footer*/
     #footer {
         height: 315px;
+        text-align: center;
     }
     .footer_logo {
         width: 100%;
@@ -646,20 +650,23 @@ a {
         font-size: 20px;
         text-align: center;
         margin-top: 10px;
+        background: none;
     }
     .footer_connect {
-        text-align: center;
-        line-height: normal;
-        padding-left: 90px;
-        padding-top: 15px;
+     margin-top: 20px;
+        margin-left: 90px;
     }
     .footer_social_buttons {
         width: 100%;
-        float: right;
-        line-height: 40px;
+        float: none;
+        line-height: 50px;
         vertical-align: middle;
+        text-align: left;
     }
-
+    .copyrights {
+        width: 70%;
+        text-align: center;
+    }
     .man_photo {
         position: absolute;
         top:-364px;
