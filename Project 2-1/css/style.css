@@ -16,6 +16,7 @@
     url("../fonts/HelveticaBold/HelveticaBold.ttf") format("truetype");
     font-weight: normal;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -239,7 +240,12 @@ a {
 .fourth_block_header_text {
     text-transform: uppercase;
     font-size: 25px;
+    vertical-align: 42px;
     color: #3498db;
+    float: left;
+}
+.fourth_block_header_arrows {
+    float:right;
 }
 .fourth_block_header_arrow_right, .fourth_block_header_arrow_left  {
     width: 35px;
@@ -251,9 +257,9 @@ a {
     font-size: 50px;
     border-radius: 18px;
     display: inline-block;
-    float: right;
     margin-right: 3px;
 }
+
 .fourth_block_header_arrow_left a, .fourth_block_header_arrow_right a {
     text-decoration: none;
     color: #888888;
@@ -465,6 +471,10 @@ a {
     .fourth_block_header_arrow_right, .fourth_block_header_arrow_left  {
        margin-right: 0;
     }
+    .fourth_block_header_arrow_right, .fourth_block_header_arrow_left {
+        float: none;
+    }
+
     .fourth_block_text {
         width:535px;
     }
