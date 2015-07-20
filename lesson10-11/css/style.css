@@ -67,3 +67,25 @@ body {
 .fa-search-plus:hover, .fa-link:hover {
     background-color: #25a6f7;
 }
+.large_foto {
+    display: none;
+    width: auto;
+    min-width: 1180px;
+    height: 2000px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.large_foto img {
+    border: 3px solid #989898;
+    width: 1140px;
+    height: 545px;
+}
+.fa-times {
+    color: #ffffff;
+    background-color: #f84c26;
+    padding: 10px;
+    position: absolute;
+    right: 40px;/*Настроить*/
+    top: -18px;
+
+}
