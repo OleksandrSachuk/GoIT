@@ -1,0 +1,26 @@
+body {
+	background-color: #fff;
+	box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
+}
+.content {
+	margin-top: 32px;
+}
+.first__block, .second__block, .third__block {
+	height: 460px;
+	border: 1px solid #dcdcdc;
+	border-top: 2px solid #f97d19;
+}
+.first__block {
+	background-color: green;
+}
+.second__block {
+	background-color: yellow;
+	margin-left: 12.5%;
+}
+.third__block {
+	background-color: blue;
+	margin-left: 12.5%;
+}
