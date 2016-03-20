@@ -9,8 +9,62 @@
   margin: 0;
   box-sizing: border-box; }
 
+html, body {
+  height: 100%; }
+
 img {
   max-width: 100%;
   height: auto; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*header start*/
+header {
+  background-color: #fafafa;
+  width: 640px;
+  height: 96px; }
+  header .header__telephone p {
+    font-size: 30px;
+    font-family: "Arial";
+    color: #838383;
+    text-transform: uppercase;
+    line-height: 96px;
+    text-align: center; }
+  header .header__account {
+    background-color: black;
+    width: 640px;
+    height: 96px; }
+    header .header__account .header__account_currency {
+      font-size: 30px;
+      font-family: "Arial";
+      color: white;
+      text-transform: uppercase;
+      line-height: 96px;
+      text-align: left;
+      padding-left: 30px; }
+    header .header__account .header__account_currency-arrow {
+      margin-left: 15px;
+      width: 20px;
+      height: 10px; }
+    header .header__account .header__account_logo {
+      margin-left: 95px;
+      padding-top: 30px; }
+    header .header__account .header__account_name {
+      font-size: 30px;
+      font-family: "Arial";
+      color: white;
+      text-transform: uppercase;
+      margin-left: 15px; }
+    header .header__account .header__account_search {
+      margin-left: 90px; }
+
+/*header end*/
+/*content start*/
+/*content end*/
+/*footer start*/
+/*footer end*/
 
 /*# sourceMappingURL=style.css.map */
