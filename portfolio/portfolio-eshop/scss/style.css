@@ -78,6 +78,11 @@ header {
       margin-left: 28px;
       padding-top: 30px;
       float: left; }
+  header .header__logo {
+    height: 202px; }
+    header .header__logo a img {
+      margin-left: 142px;
+      margin-top: 55px; }
 
 /*header end*/
 /*content start*/
