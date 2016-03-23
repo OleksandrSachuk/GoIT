@@ -12,8 +12,11 @@
 	box-sizing: border-box;
 }
 html, body {
-	height: 100%;
+	// height: 100%;
   background-color: rgb(255, 255, 255);
+}
+header, section {
+  display: block;
 }
 img {
 	max-width: 100%;
@@ -24,13 +27,14 @@ img {
 	display: table;
 	clear: both;
 }
+.container {
+    width: 640px;
+}
 /*header start*/
 header {
-	background-color: rgb(250, 250, 250);
-  	width: 640px;
-  	height: 96px;
-
   		.header__telephone {
+        background-color: rgb(250, 250, 250);
+        height: 96px;
   			p {
   				font-size: 30px;
   				font-family: "Arial";
@@ -145,7 +149,38 @@ header {
 /*header end*/
 
 /*content start*/
-
+.content {
+  margin-top: 26px;
+   .content__email {
+     height: 95px;
+     width: 640px;
+     .content__email_input {
+      input {
+        height: 96px;
+        width: 544px;
+        background-color: #ededed; 
+        font-size: 30px;
+        font-style: italic;
+        font-family: "Arial";
+        color: rgb(159, 159, 159);
+        border: 0;
+        padding-left: 30px;
+        float: left;
+      }
+    }
+    .content__email_plus {
+      height: 96px;
+      width: 96px;
+      background-color: #fd926d;
+      float: right;
+      border-bottom: 8px solid #dd6b44;
+      img {
+        margin-top: 26px;
+        margin-left: 29px;
+      }
+    }
+  }
+}
 /*content end*/
 
 /*footer start*/
