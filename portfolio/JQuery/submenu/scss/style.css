@@ -18,19 +18,20 @@ header nav {
       position: absolute;
       display: none;
       z-index: 999; }
-      header nav li ul li a {
-        width: 80px;
-        background-color: #A9A9A9; }
+      header nav li ul li {
+        float: none; }
+        header nav li ul li a {
+          width: 80px; }
   header nav li:hover a {
     background: #f09d28;
     color: #000; }
+  header nav li:hover .noJS {
+    display: block; }
   header nav li:hover ul {
-    display: block;
     background: #f09d28; }
-    header nav li:hover ul li {
-      float: none; }
-      header nav li:hover ul li a {
-        color: #000; }
+    header nav li:hover ul li a {
+      display: block;
+      color: #000; }
     header nav li:hover ul li:hover a {
       background: #ffc97c; }
 

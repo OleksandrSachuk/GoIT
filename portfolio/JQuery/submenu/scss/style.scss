@@ -22,9 +22,9 @@ header {
 				display: none;
 				z-index: 999;
 				li {
+					float: none;
 					a {
 						width: 80px;
-						background-color: #A9A9A9;
 					}
 				}
 			}
@@ -34,13 +34,14 @@ header {
 				background: #f09d28;
     			color: #000;
 			}
+			.noJS {
+					display: block;
+				}
 			ul {
-				display: block;
-				background: #f09d28;
+				background: #f09d28;	
 				li {
-					float: none;
 					a {
-						// display: block;
+						display: block;
 						color: #000;
 					}
 				}
