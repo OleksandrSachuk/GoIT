@@ -1,33 +1,39 @@
-@font-face {
-  font-family: Aempirial;
-  src: url(../fonts/aempirial.ttf); }
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
-
-html, body, .container {
-  height: 100%;
-  background-color: white; }
-
-header, section {
-  display: block; }
-
-img {
-  max-width: 100%;
-  height: auto; }
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.container {
-  width: 100%;
-  max-width: 640px;
-  margin: 0 auto; }
-
 /*header start*/
+header nav {
+  float: left;
+  font-family: Arial;
+  font-size: 12px;
+  background: #2f8be8; }
+  header nav li {
+    float: left; }
+    header nav li a {
+      display: block;
+      height: 2em;
+      line-height: 2em;
+      padding: 0 1.5em;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold; }
+    header nav li ul {
+      position: absolute;
+      display: none;
+      z-index: 999; }
+      header nav li ul li a {
+        width: 80px;
+        background-color: #A9A9A9; }
+  header nav li:hover a {
+    background: #f09d28;
+    color: #000; }
+  header nav li:hover ul {
+    display: block;
+    background: #f09d28; }
+    header nav li:hover ul li {
+      float: none; }
+      header nav li:hover ul li a {
+        color: #000; }
+    header nav li:hover ul li:hover a {
+      background: #ffc97c; }
+
 /*header end*/
 /*content start*/
 /*content end*/
