@@ -1,0 +1,45 @@
+@font-face {
+	font-family: Aempirial;
+	src: url(../fonts/aempirial.ttf);
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html, body, .container {
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+header, section {
+  display: block;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.container {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+/*header start*/
+header {
+
+}
+/*header end*/
+
+/*content start*/
+
+/*content end*/
+
+/*footer start*/
+footer {
+
+}
+/*footer end*/
