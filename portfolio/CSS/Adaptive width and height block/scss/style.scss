@@ -1,0 +1,15 @@
+.container {
+	position: relative;
+	width: 50%;
+}
+.container:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+.content {
+	background-color: yellow;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
