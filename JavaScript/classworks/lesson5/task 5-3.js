@@ -1,0 +1,10 @@
+var fruits = ["apple", "orange"];
+fruits.push("kiwi");
+console.log(fruits);
+delete fruits[fruits.length-1];
+console.log(fruits);
+fruits.push("pear");
+console.log(fruits);
+console.log(fruits.shift());
+fruits.unshift("apricot", "peach");
+console.log(fruits);

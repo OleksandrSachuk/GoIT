@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        todo__check{
+            margin-right: 5px
+        }
+        todo__check:checked + .todo__text{
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class=buttons>
+            <input class="new-task" placeholder="Write a task here...">
+            <button class="add-task">Add a new block</button>
+        </div>
+        <ul class="todos"></ul>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded',function () {
+        var button = document.querySelector('.add-task'),
+                todoList = document.querySelector('.todos'),
+                newTodoInput = document.querySelector('.new-task'),
+                addNewTask = function(){
+                    var newTodo = document.createElement('li'),
+                            todoCheckBox = document.createElement('input'),
+                            todoText = document.createElement('span'),
+                            todoDelete = document.createElement('button'),
+                            newTodoText = newTodoInput.value.trim();
+
+                    if(newTodoText){
+                        newTodo.className = 'todo';
+                        todoCheckBox.type = 'checkbox';
+                        todoCheckBox.className = 'todo__check';
+
+                        todoText.innerHTML = newTodoText;
+                        todoText.className = 'todo__text';
+
+                        todoDelete.innerHTML = 'Delete';
+                        todoDelete.className = 'todo__delete';
+                        todoDelete.onclick = function(){
+                            this.parentNode.outerHTML = '';
+                        };
+                        newTodo.appendChild(todoCheckBox);
+                        newTodo.appendChild(todoText);
+                        newTodo.appendChild(todoDelete);
+                        todoList.appendChild(newTodo);
+                        newTodoInput.value = '';
+                    } else {
+                        alert('Input something');
+                    }
+                };
+        newTodoInput.onkeypress = function(event){
+            if(event.keyCode == 13){
+                addNewTask();
+            }
+        };
+        button.onclick = addNewTask;
+    });
+</script>
+</body>
+</html>

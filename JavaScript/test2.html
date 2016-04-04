@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .blocks{
+            background-color: yellow;
+            padding: 20px;
+        }
+        .inner-block{
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class=buttons>
+        <input class="new-class" placeholder="Write a task here...">
+        <button class="add-block">Add a new block</button>
+    </div>
+    <div class="blocks">
+        <ul class="todos">
+
+        </ul>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded',function () {
+        var button = document.querySelector('.add-block'),
+                blocksDiv = document.querySelector('.blocks'),
+                getRandomColor = function(){
+                    var symbols = '0123456789ABCDEF'.split(''),
+                            prefix = '#',
+                            color = prefix;
+                    for (var i = 0; i < 6; i++){
+                        color +=symbols[Math.floor(Math.random() * 16)];
+                    }
+                    return color;
+                    console.log(color);
+                };
+        button.onclick = function(){
+            var newDiv = document.createElement('div');
+            newDiv.className = 'inner-block';
+            newDiv.style.backgroundColor = getRandomColor();
+            var deleteButton = document.createElement('button');
+            deleteButton.innerHTML = 'Remove';
+            deleteButton.onclick = function(){
+                this.parentNode.outerHTML = '';
+            };
+            newDiv.appendChild(deleteButton);
+            blocksDiv.appendChild(newDiv);
+        };
+    });
+</script>
+</body>
+</html>
