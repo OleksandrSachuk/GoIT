@@ -16,7 +16,7 @@ body {
     body .wrapper .slider {
       z-index: 9;
       width: 900px;
-      height: 600px;
+      height: 500px;
       overflow: hidden;
       margin: 0 0 7px;
       position: relative;
@@ -32,7 +32,7 @@ body {
       list-style-type: none;
       float: left;
       width: 900px;
-      height: 600px; }
+      height: 500px; }
     body .wrapper .slider .nav {
       position: absolute;
       left: 15px;
