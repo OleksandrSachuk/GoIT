@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="scss/style.css">
+	<title>Persons information</title>
+</head>
+<body>
+	<!--table start-->
+	<section class="table">
+		<div class="container">
+			<table>
+				<caption>Persons information</caption>
+				<tr>
+					<th>First name</th>
+					<th>Last name</th>
+					<th>Phone</th>
+					<th>Gender</th>
+					<th>Age</th>
+				</tr>
+				<tr>
+					<td id="firstNameTable"></td>
+					<td id="lastNameTable"></td>
+					<td id="phoneTable"></td>
+					<td id="genderTable"></td>
+					<td id="ageTable"></td>
+				</tr>
+			</table>
+		</div>
+	</section>
+	<!--table end-->
+
+	<!--form start-->
+	<section class="form">
+		<div class="container">
+			<form name="info" method="post" action="#">
+
+				<!-- First name form start -->
+				<p> <b>First name
+						<br>(min 3 symbols)</b>
+				</p>
+				<input type="text" id="firstName">
+				<!-- First name form end -->
+
+				<!-- Last name form start -->
+				<p> <b>Last name
+						<br>(min 3 symbols)</b>
+				</p>
+				<input type="text" id="lastName">
+				<!--Last name form end -->
+
+				<!-- Phone form start -->
+				<p>
+					<b>Phone</b>
+				</p>
+				<input type="text" id="phone">
+				<!-- Phone form end -->
+
+				<!-- Gender form start -->
+				<p>
+					<b>
+						Gender
+						<br>(male or female)</b>
+				</p>
+				<input type="text" id="gender">
+
+				<!-- Gender form end -->
+
+				<!-- Age form start -->
+				<p>
+					<b>
+						Age
+						<br>(from 10 to 125 years)</b>
+				</p>
+				<input type="text" id="age">
+				<!-- Age form end -->
+				<br>
+				<br>
+
+				<!-- Buttons -->
+				<input type="submit" value="SEND" id="send">
+				<input type="reset" value="CLEAR"></form>
+		</div>
+	</section>
+	<!--form end-->
+
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src="js/main.js"></script>
+</body>
+</html>

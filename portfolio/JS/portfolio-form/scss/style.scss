@@ -1,0 +1,43 @@
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+table {
+  margin: auto;
+  border-collapse: collapse;
+
+  caption {
+  		padding: 5px;
+	}
+
+	th, td {
+	  text-align: center;
+	  padding: 3px;
+	  border: 1px solid black;
+	}
+}
+
+form {
+  text-align: center;
+
+  	input[type="submit"], input[type="reset"] {
+	  padding: 10px;
+	  border-radius: 5px;
+	}
+	
+	input[type="submit"] {
+ 		margin-right: 10px;
+
+ 		&:hover {
+		  background-color: green;
+		}
+	}
+	input[type="reset"]:hover {
+	  background-color: red;
+	  }
+}
+
+.error {
+   border: 1px solid red;
+}

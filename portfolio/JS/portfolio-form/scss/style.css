@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  margin: 0 auto; }
+
+table {
+  margin: auto;
+  border-collapse: collapse; }
+  table caption {
+    padding: 5px; }
+  table th, table td {
+    text-align: center;
+    padding: 3px;
+    border: 1px solid black; }
+
+form {
+  text-align: center; }
+  form input[type="submit"], form input[type="reset"] {
+    padding: 10px;
+    border-radius: 5px; }
+  form input[type="submit"] {
+    margin-right: 10px; }
+    form input[type="submit"]:hover {
+      background-color: green; }
+  form input[type="reset"]:hover {
+    background-color: red; }
+
+.error {
+  border: 1px solid red; }
+
+/*# sourceMappingURL=style.css.map */
