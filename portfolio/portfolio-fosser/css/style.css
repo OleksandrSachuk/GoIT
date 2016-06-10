@@ -559,8 +559,14 @@ footer {
   bottom: 110px;
   right: 110px;
   display: none;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
   .scrollup .fa-long-arrow-up {
     font-size: 13px;
     color: #6e7e8d;
     line-height: 50px; }
+  .scrollup p {
+    font-size: 13px;
+    font-family: "Roboto Regular";
+    color: #6e7e8d;
+    margin-top: 20px; }

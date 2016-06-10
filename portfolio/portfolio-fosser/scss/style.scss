@@ -708,10 +708,17 @@ footer {
 	right: 110px;
 	display: none;
 	text-align: center;
+	cursor: pointer;
 
 	.fa-long-arrow-up {
 		font-size: 13px;
   		color: rgb(110, 126, 141);
   		line-height: 50px;
+	}
+	p {
+		font-size: 13px;
+  		font-family: "Roboto Regular";
+  		color: rgb(110, 126, 141);
+  		margin-top: 20px;
 	}
 }
