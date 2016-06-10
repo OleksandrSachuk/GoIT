@@ -654,8 +654,64 @@ footer {
 		}
 		.footer__contacts {
 			width: 341px;
+			text-align: left;
+			h6 {
+				font-size: 13px;
+  				font-family: "Roboto Medium";
+  				color: rgb(255, 255, 255);
+  				margin-top: 70px;
+			}
+			.fa-phone {
+				color: #6e7e8d;
+			}
+			p {
+				font-size: 13px;
+  				font-family: "Roboto Regular";
+  				color: rgb(255, 255, 255);
+  				line-height: 1.692;
+			}
+			.footer__contacts_tel{
+  				padding-top: 35px;
+  				span {
+  					padding-left: 15px;
+  					padding-right: 15px;
+  				}
+  			}
+  			.footer__contacts_email {
+				padding-top: 30px;
+  				span {
+  					padding-left: 15px;
+  				}
+  			}
+			.footer__contacts_adress {
+				padding-top: 35px;
+				color: #a0acb7;
+			}
+			.fa-envelope {
+				@extend .fa-phone;
+			}
+			img {
+				padding-top: 40px;
+			}
 		}
 	}	
 }
-
 /*footer end*/
+
+.scrollup {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #6e7e8d;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 110px;
+	right: 110px;
+	display: none;
+	text-align: center;
+
+	.fa-long-arrow-up {
+		font-size: 13px;
+  		color: rgb(110, 126, 141);
+  		line-height: 50px;
+	}
+}
