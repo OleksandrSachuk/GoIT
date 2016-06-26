@@ -150,6 +150,133 @@ img {
 	}
 }
 
+.menu-adaptive{
+	background-color: #070c1a;
+	height: 100px;
+	position: relative;
+
+	.fixed{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 100;
+	}
+
+	.menu__logo {
+		position: relative;
+		img {
+			position: absolute;
+			top: 14px;
+		}
+	}
+	.menu__adaptive_button {
+		background-color: #070c1a;
+		width: 40px;
+		height: 40px;
+		border: 1px solid white;
+		border-radius: 10px;
+		float: right;
+		position: absolute;
+		top: 30px;
+		right: 10px;
+		cursor: pointer;
+		
+		div {
+			width: 25px;
+			margin: 0 auto;
+			border: 1px solid white;
+			margin-top: 4px;
+
+			&:first-child{
+				margin-top: 13px;
+			}
+		}
+	}
+	// .menu__close{
+	// 	display: none;
+	// 	width: 40px;
+	// 	height: 40px;
+	// 	border: 1px solid white;
+	// 	border-radius: 10px;
+	// 	float: right;
+	// 	position: absolute;
+	// 	top: 30px;
+	// 	right: 10px;
+	// 	cursor: pointer;
+	// 	color: white;
+	// 	font-style: 16px;
+	// 	text-align: center;
+	// 	line-height: 40px;
+	// }
+	nav {
+		display: none;
+		float: right;
+		margin-top: 100px;
+		margin-right: 80px;
+
+		ul {
+			list-style: none;
+
+			li {
+				display: block;
+
+				a {
+					display: block;
+					font-size: 18px;
+  					font-family: "PFDinTextCompPro-Regular";
+  					color: rgb(222, 222, 3);
+  					text-transform: uppercase;
+				    text-decoration: none;
+					// padding-top: 38px;
+					// padding-bottom: 40px;
+					// padding-left: 15px;
+					// padding-right: 15px;
+				}
+
+				a:hover {
+					  color: rgb(255, 255, 255);
+				}
+			}
+		}
+	}
+	.menu__lang {
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		nav {
+		float: right;
+		padding-top: 50px;
+
+		ul {
+			list-style: none;
+
+			li {
+				display: block;
+
+				a {
+					display: block;
+					font-size: 18px;
+  					font-family: "PFDinTextCompPro-Regular";
+  					color: rgb(41, 41, 41);
+				    text-decoration: none;
+				}
+
+				a:hover {
+					color: rgb(102, 102, 102);
+				}
+				&:first-child{
+					a {
+						padding-left: 0;
+					}
+				}
+			}
+		}
+	}
+	}
+}
+
 /*section menu end*/
 
 /*section advantages start*/
@@ -704,7 +831,6 @@ img {
 	padding: 20px;
 }
 /*section copyright end*/
-
 
 @media screen and (max-width:1199px) {
 	#advantages {

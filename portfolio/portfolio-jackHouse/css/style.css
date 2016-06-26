@@ -195,6 +195,133 @@ img
     padding-left: 0;
 }
 
+.menu-adaptive
+{
+    position: relative; 
+
+    height: 100px;
+
+    background-color: #070c1a;
+}
+.menu-adaptive .fixed
+{
+    position: fixed;
+    z-index: 100; 
+    top: 0;
+    left: 0;
+
+    width: 100%;
+}
+.menu-adaptive .menu__logo
+{
+    position: relative;
+}
+.menu-adaptive .menu__logo img
+{
+    position: absolute;
+    top: 14px;
+}
+.menu-adaptive .menu__adaptive_button
+{
+    position: absolute;
+    top: 30px;
+    right: 10px;
+
+    float: right;
+
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer; 
+
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #070c1a;
+}
+.menu-adaptive .menu__adaptive_button div
+{
+    width: 25px;
+    margin: 0 auto;
+    margin-top: 4px; 
+
+    border: 1px solid white;
+}
+.menu-adaptive .menu__adaptive_button div:first-child
+{
+    margin-top: 13px;
+}
+.menu-adaptive nav
+{
+    display: none;
+    float: right;
+
+    margin-top: 100px;
+    margin-right: 80px;
+}
+.menu-adaptive nav ul
+{
+    list-style: none;
+}
+.menu-adaptive nav ul li
+{
+    display: block;
+}
+.menu-adaptive nav ul li a
+{
+    font-family: 'PFDinTextCompPro-Regular';
+    font-size: 18px;
+
+    display: block;
+
+    text-decoration: none; 
+    text-transform: uppercase;
+
+    color: #dede03;
+}
+.menu-adaptive nav ul li a:hover
+{
+    color: white;
+}
+.menu-adaptive .menu__lang
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.menu-adaptive .menu__lang nav
+{
+    float: right;
+
+    padding-top: 50px;
+}
+.menu-adaptive .menu__lang nav ul
+{
+    list-style: none;
+}
+.menu-adaptive .menu__lang nav ul li
+{
+    display: block;
+}
+.menu-adaptive .menu__lang nav ul li a
+{
+    font-family: 'PFDinTextCompPro-Regular';
+    font-size: 18px;
+
+    display: block;
+
+    text-decoration: none; 
+
+    color: #292929;
+}
+.menu-adaptive .menu__lang nav ul li a:hover
+{
+    color: #666;
+}
+.menu-adaptive .menu__lang nav ul li:first-child a
+{
+    padding-left: 0;
+}
+
 /*section menu end*/
 /*section advantages start*/
 #advantages
