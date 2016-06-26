@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	$(".menu").on("click","a", function (event) {
+	$(".menu-default").on("click","a", function (event) {
 console.log("ok")
 	//отменяем стандартную обработку нажатия по ссылке
 	event.preventDefault();
