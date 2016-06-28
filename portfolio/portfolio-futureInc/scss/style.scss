@@ -1,0 +1,305 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	color: rgb(255, 255, 255);
+	background-color: white;
+}
+
+/*header start*/
+#header {
+	background: url('../img/header_bg.png') no-repeat;
+	background-size: cover;
+
+	.header__top{
+		padding-top: 35px;
+	}
+	.header__telImg{
+		margin-top: 30px;
+	}
+	.header__tel{
+		font-size: 18px;
+		text-decoration: none;
+		color: white;
+		padding-left: 25px;
+	}
+	button{
+		border: 0;
+		border-radius: 4px;
+	 	background-color: rgb(245, 184, 0);
+  		font-size: 17px;
+  		color: rgb(0, 0, 0);
+  		text-transform: uppercase;
+  		font-weight: bold;
+  		padding: 15px 20px;
+  		border-bottom: 5px solid #eb8500;
+  		// box-shadow: inset 0px -5px 0px 0px rgba(245,184, 0,0.004);
+  		cursor: pointer;
+	}
+	.header__content{
+		font-size: 18px;
+		text-align: center;
+		padding-top: 35px;
+	}
+	.header__content_last {
+		padding-top: 60px;
+		padding-bottom: 70px;
+		h1{
+			font-size: 40px;
+			text-align: center;
+			span {
+				color: #d1222a;
+			}
+		}
+	}
+}
+/*header end*/
+
+/*section content start*/
+.content{
+	background: url('../img/content_bg.png') no-repeat;
+	background-size: cover;
+
+	.content__header{
+		margin-top: 75px;
+		background: url('../img/content__header_bg.png') no-repeat;
+		background-size: contain;
+		font-size: 36px;
+  		color: rgb(41, 41, 41);
+  		font-weight: bold;
+  		text-transform: uppercase;
+		text-align: center;
+
+		h2{
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+	h3{
+		font-size: 30px;
+  		color: rgb(209, 34, 42);
+		text-align: center;
+		margin-top: 25px;
+		margin-bottom: 75px;
+	}
+	.content__arrow{
+		border: 0;
+		width: 48px;
+		height: 60px;
+		background: url("../img/content_arrow.png") no-repeat;
+		background-size: cover;
+		float: right;
+		margin-right: 25px;
+	}
+	.content__standart{
+		background: url('../img/content__standart_bg.png') no-repeat;
+		background-size: cover;
+		.content__standart_header{
+			font-size: 30px;
+  			color: rgb(51, 51, 51);
+  			font-weight: bold;
+  			text-align: center;
+  			clear: both;
+  			// border: 1px solid #eaeaea;
+  			padding-top: 43px;
+  			padding-bottom: 39px;
+  			margin-top: 100px;
+		}
+		.content__standart_inner{
+			// border: 1px solid #eaeaea;
+
+			.content__standart_list{
+			
+			ul{
+				
+				li{
+				  	font-size: 16px;
+  					color: rgb(88, 88, 88);
+  					padding-top: 40px;
+  					text-align: left;
+  					line-height: 1.341;
+  					
+  					&:first-child{
+  						padding-top: 35px;
+  					}
+  					.fa-check{
+  						padding-left: 20px;
+  						padding-right: 15px;
+  						padding-bottom: 30px;
+  						font-size: 30px;
+  						color: rgb(209, 34, 42);
+  						float: left;
+  					}
+  					p{
+  						float: none;
+  					}	
+				}
+			}
+		}
+			.content__standart_underline{
+				margin-top: 48px;
+				margin: 0 auto;
+				width: 234px;
+				height: 2px;
+				background: url('../img/content__standart_underline.png') no-repeat;
+				background-size: cover;
+			}
+			.content__standart_previous-price{
+				font-size: 18px;
+			  	color: rgb(88, 88, 88);
+	  			text-decoration: line-through;
+	  			line-height: 2;
+	  			text-align: center;
+	  			margin-top: 18px;
+			}
+			.content__standart_actual-price{
+				color: #d1222a;
+				text-align: center;
+				font-size: 30px;
+				margin-top: 12px;
+			}
+			.content__standart_button{
+				text-align: center;
+
+				button{
+				    border: 0;
+				    border-radius: 3px;
+		  			background-color: rgb(245, 184, 0);
+		  			// box-shadow: inset 0px -5px 0px 0px rgba(245, 184, 0, 0.004);
+		  			border-bottom: 1px solid #eb8500;
+		  			text-transform: uppercase;
+		  			font-weight: bold;
+		  			margin: 0 auto;
+		  			padding: 20px;
+		  			cursor: pointer;
+		  			margin-top: 24px;
+		  			margin-bottom: 34px;
+				}
+			}
+		}		
+	}
+.content__premium{
+		margin-left: -20px;
+		background: url('../img/content__premium_bg.png') no-repeat;
+		background-size: cover;
+		border: 1px solid #eaeaea;
+		border-top: 4px solid #d1222a;
+		margin-bottom: 105px;
+
+		.content__premium_header{
+			font-size: 30px;
+  			color: rgb(51, 51, 51);
+  			font-weight: bold;
+  			text-align: center;
+  			clear: both;
+
+  			
+  			padding-top: 43px;
+  			padding-bottom: 39px;
+  			margin-top: 40px;
+		}
+		.content__premium_inner{
+			// border: 1px solid #eaeaea;
+
+			.content__premium_list{
+			
+			ul{
+				
+				li{
+				  	font-size: 16px;
+  					color: rgb(88, 88, 88);
+  					padding-top: 40px;
+  					text-align: left;
+  					line-height: 1.341;
+  					
+  					&:first-child{
+  						padding-top: 35px;
+  					}
+  					.fa-check{
+  						padding-left: 20px;
+  						padding-right: 15px;
+  						padding-bottom: 30px;
+  						font-size: 30px;
+  						color: rgb(209, 34, 42);
+  						float: left;
+  					}
+  					.fa-check-last{
+  						padding-bottom: 36px;
+  					}
+  					p{
+  						float: none;
+  					}	
+				}
+			}
+		}
+			.content__premium_underline{
+				margin-top: 48px;
+				margin: 0 auto;
+				width: 234px;
+				height: 2px;
+				background: url('../img/content__standart_underline.png') no-repeat;
+				background-size: cover;
+			}
+			.content__premium_previous-price{
+				font-size: 18px;
+			  	color: rgb(88, 88, 88);
+	  			text-decoration: line-through;
+	  			line-height: 2;
+	  			text-align: center;
+	  			margin-top: 18px;
+			}
+			.content__premium_actual-price{
+				color: #d1222a;
+				text-align: center;
+				font-size: 30px;
+				margin-top: 12px;
+			}
+			.content__premium_button{
+				text-align: center;
+
+				button{
+				    border: 0;
+				    border-radius: 3px;
+		  			background-color: rgb(245, 184, 0);
+		  			// box-shadow: inset 0px -5px 0px 0px rgba(245, 184, 0, 0.004);
+		  			border-bottom: 1px solid #eb8500;
+		  			text-transform: uppercase;
+		  			font-weight: bold;
+		  			margin: 0 auto;
+		  			padding: 20px;
+		  			cursor: pointer;
+		  			margin-top: 24px;
+		  			margin-bottom: 34px;
+				}
+			}
+		}		
+	}
+}
+/*section content end*/
+
+/*section comments start*/
+.comments {
+	background: url('../img/comments_bg.png') no-repeat;
+	background-size: cover;
+	.comments__header{
+		background: url('../img/content__header_bg.png') no-repeat;
+		background-size: contain;
+		margin-top: 80px;
+		padding-bottom: 20px;
+
+		h2{
+			font-size: 36px;
+	  		color: black;
+	  		font-weight: bold;
+	  		text-transform: uppercase;
+	  		text-align: center;
+	  		padding-top: 15px;
+
+	  		span{
+	  			color: rgb(209, 34, 42);
+	  		}
+		}
+	}
+	
+}
+/*section comments end*/
