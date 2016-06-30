@@ -1,3 +1,4 @@
+@charset 'UTF-8';
 @import 'https://fonts.googleapis.com/css?family=Roboto';
 body
 {
@@ -643,6 +644,83 @@ body
 }
 
 /*footer end*/
+.overlay
+{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    opacity: .5;
+    background: #000;
+}
+
+#pop-up
+{
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+
+    display: none;
+
+    width: 200px;
+    height: 200px;
+    margin: -100px 0 0 -100px;
+    padding: 30px;
+
+    text-align: center;
+
+    border: 3px solid #999;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    background: #fff;
+    background-color: #eaeaea;
+}
+#pop-up p
+{
+    margin-bottom: -10px; 
+
+    color: #000;
+}
+#pop-up input
+{
+    margin-bottom: 20px;
+}
+#pop-up input[value='Отправить'],
+#pop-up input[value='Отмена']
+{
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-top: 10px; 
+    padding: 5px;
+
+    cursor: pointer;
+    text-transform: uppercase;
+
+    color: black;
+    border: 0;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+}
+#pop-up input[value='Отмена']
+{
+    margin-left: 10px;
+}
+#pop-up input[value='Отправить']:hover
+{
+    background-color: green;
+}
+#pop-up input[value='Отмена']:hover
+{
+    background-color: red;
+}
+
 @media screen and (max-width: 980px)
 {
     .content .content__standart .content__standart_inner .content__standart_list ul li
@@ -740,6 +818,10 @@ body
     .content .content__header h2
     {
         padding-right: 0;
+    }
+    #pop-up
+    {
+        left: 40%;
     }
 }
 

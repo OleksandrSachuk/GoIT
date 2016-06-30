@@ -43,7 +43,7 @@ var ADAPT_CONFIG = {
   ]
 };
 </script>
-<script src="assets/js/adapt.js"></script>
+	<script src="assets/js/adapt.js"></script>
 </head>
 <body>
 	<!--header start-->
@@ -200,7 +200,7 @@ var ADAPT_CONFIG = {
 			<div class="grid_3 comments__item1_photo">
 				<div class="grid_6 alpha">
 					<img src="img/comments__item1_photo.png" alt="photo"></div>
-				
+
 			</div>
 			<div class="grid_9 comments__item1_text">
 				<p>
@@ -329,9 +329,21 @@ var ADAPT_CONFIG = {
 		</div>
 	</footer>
 	<!-- footer end -->
-
+	<div class="overlay"></div>
+	<div id="pop-up">
+		<form action="#">
+			<p><b>Ваше имя?</b></p>
+			<input type="name">
+			<br>
+			<p><b>Ваш телефон?</b></p>
+			<input type="name">
+			<br>
+			<input type="submit" value="Отправить" class="close">
+			<input type="button" value="Отмена" class="close">
+		</form>
+	</div>
 	<script src="js/jquery-2.2.0.min.js"></script>
-	s
+	<script src="js/pop-up.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
