@@ -124,8 +124,7 @@ body
 }
 .content .content__standart
 {
-    background: url('../img/content__standart_bg.png') no-repeat;
-    background-size: cover;
+    background: #fff;
 }
 .content .content__standart .content__standart_header
 {
@@ -134,13 +133,22 @@ body
 
     clear: both;
 
-    margin-top: 100px; 
+    margin-top: 100px;
     padding-top: 43px;
     padding-bottom: 39px;
 
     text-align: center;
 
     color: #333;
+    border: 1px solid #eaeaea;
+}
+.content .content__standart .content__standart_inner
+{
+    border: 1px solid #eaeaea;
+}
+.content .content__standart .content__standart_inner .content__standart_list ul
+{
+    list-style-type: none;
 }
 .content .content__standart .content__standart_inner .content__standart_list ul li
 {
@@ -232,10 +240,7 @@ body
     margin-bottom: 105px; 
     margin-left: -20px;
 
-    border: 1px solid #eaeaea;
-    border-top: 4px solid #d1222a;
-    background: url('../img/content__premium_bg.png') no-repeat;
-    background-size: cover;
+    background: #fff;
 }
 .content .content__premium .content__premium_header
 {
@@ -251,6 +256,16 @@ body
     text-align: center;
 
     color: #333;
+    border: 1px solid #eaeaea;
+    border-top: 4px solid #d1222a;
+}
+.content .content__premium .content__premium_inner
+{
+    border: 1px solid #eaeaea;
+}
+.content .content__premium .content__premium_inner .content__premium_list ul
+{
+    list-style-type: none;
 }
 .content .content__premium .content__premium_inner .content__premium_list ul li
 {
@@ -274,7 +289,7 @@ body
     float: left; 
 
     padding-right: 15px;
-    padding-bottom: 30px;
+    padding-bottom: 35px;
     padding-left: 20px;
 
     color: #d1222a;
@@ -354,10 +369,9 @@ body
     font-size: 36px;
     font-weight: bold;
 
-    width: 620px;
-    height: 119px;
     margin-top: 80px;
-    padding-top: 15px; 
+    padding-top: 15px;
+    padding-right: 200px; 
 
     text-align: center;
     text-transform: uppercase;
@@ -629,3 +643,118 @@ body
 }
 
 /*footer end*/
+@media screen and (max-width: 980px)
+{
+    .content .content__standart .content__standart_inner .content__standart_list ul li
+    {
+        margin-left: 0;
+    }
+    .content .content__standart .content__standart_inner .content__standart_list ul li .fa-check
+    {
+        padding-left: 0;
+    }
+    .content .content__premium .content__premium_inner .content__premium_list ul li
+    {
+        margin-left: 0;
+    }
+    .content .content__premium .content__premium_inner .content__premium_list ul li .fa-check
+    {
+        padding-left: 0;
+    }
+    .content .content__premium .content__premium_inner .content__premium_list ul li .fa-check-last
+    {
+        padding-bottom: 80px;
+    }
+    .comments .comments__header
+    {
+        padding-top: 0;
+
+        background: transparent;
+    }
+}
+
+@media screen and (max-width: 1280px)
+{
+    .comments .comments__header
+    {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 760px)
+{
+    #header
+    {
+        text-align: center;
+    }
+    #header .header__telImg
+    {
+        display: inline-block;
+    }
+    #header .header__order
+    {
+        display: inline-block;
+    }
+    #header .header__order .header__tel
+    {
+        padding-left: 0;
+    }
+    .content .content__arrow
+    {
+        display: none;
+    }
+    .content .content__premium
+    {
+        margin-left: 0;
+    }
+    .comments__item1_photo,
+    .comments__item2_photo,
+    .comments__item3_photo,
+    .comments__item4_photo
+    {
+        text-align: center;
+    }
+    .comments__item1_photo,
+    .comments__item3_photo
+    {
+        padding-bottom: 20px;
+    }
+    #footer
+    {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .content .content__header h2
+    {
+        padding-top: 0;
+        padding-right: 10%; 
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 530px)
+{
+    .content .content__header h2
+    {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 430px)
+{
+    .content .content__header
+    {
+        background: transparent;
+    }
+}
+
+@media screen and (max-width: 327px)
+{
+    #header .header__telImg
+    {
+        display: none;
+    }
+}
