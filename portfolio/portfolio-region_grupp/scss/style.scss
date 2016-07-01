@@ -9,7 +9,10 @@
 	-o-box-sizing: border-box;
 	box-sizing: border-box;
 }
-	
+	img{
+		max-width: 100%;
+		height: auto;
+	}
 body {
 	margin: 0 auto;
 	width: 100%;
@@ -77,7 +80,7 @@ header {
 .menu__block {
 	width: auto;
 	height: 493px;
-	border-bottom: 5px solid #76d7c4;
+	// border-bottom: 5px solid #76d7c4;
 
 	.menu__block_logo, .menu__block_main-menu {
 		display: inline-block;
@@ -118,7 +121,14 @@ header {
 			
 		}
 	}
+	.menu__bottom{
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		border-bottom: 5px solid #76d7c4;
+	}
 	.menu__block_house {
+		width: 58%;
 		float: left;
 		display: inline-block;
 		margin-top: 2px;
@@ -215,6 +225,7 @@ header {
 	.our-services__block_info-4 {
 		background-image: url('../images/our services/our-services__block_info-4.png');
 		background-repeat: no-repeat;
+		padding-top: 20px;
 	}
 }
 /*our services block end*/
@@ -426,11 +437,91 @@ header {
 	#header{
 		text-align: center;
 	}
+	.our-services__block{
+		text-align: center;
+	}
+	.our-services__block_info-1, .our-services__block_info-2, 
+	.our-services__block_info-3, .our-services__block_info-4 {
+		margin-top: 20px;
+		margin-left: 0 !important;
+	}
+	.greetings__block{
+		clear: both;
+	}
+	.news__block{
+		text-align: center;
+	}
+}
+@media screen and(max-width:924px) {
+	.menu__block .menu__block_logo {
+		width: 100%;
+		text-align: center;		
+	}
+	.menu__block .menu__block_logo, .menu__block .menu__block_main-menu {
+		width: 100%;
+		text-align: center;
+	}
+	.our-services__block{
+		padding-top: 100px;
+	}
+	.greetings__block .greetings__block_info-1, 
+	.greetings__block .greetings__block_info-2, .greetings__block .greetings__block_info-3, .greetings__block .greetings__block_info-4 {
+		margin-left: 0;}
+
+}
+@media screen and(max-width:688px) {
+	.menu__block .menu__block_main-menu {
+		display: none;
+	}
+}
+@media screen and(max-width:666px) {
+	.menu__block .menu__bottom {
+		text-align: center;
+	}
+
+	.menu__block .menu__block_house {
+		width: auto;
+	}
+	.menu__block .menu__block_information-block {
+		float: none;
+		padding-right: 0;
+	}
+	.menu__block .menu__block_information-block .menu__block_information-block_first-menu-button {
+		margin-left: 0;
+	}
+	.our-services__block{
+		padding-top: 370px;
+	}
+}
+@media screen and(max-width:570px) {
+	.greetings__block{
+		text-align: center;
+	}
+	#footer{
+		text-align: center;
+	}
+	#footer .footer__contacts .footer__contacts_logo {
+		margin-left: 0;
+	}
+	#footer .footer__contacts .footer__contacts-all {
+		float: none;
+		padding-left: 0;
+		text-align: left;
+	}
+	#footer .footer__contacts .footer__contacts_logo .footer__contacts_social {
+		padding-bottom: 0;
+	}
+	#footer .footer__contacts .footer__contacts_web-sutio {
+		padding-top: 15px;
+	}
 }
 @media screen and(max-width:321px) {
 	#header{
 		.header__tel {
 			margin-left: 5px;
 		}
+	}
+	.our-services__block {
+		padding-top: 250px;
 	}
 }
