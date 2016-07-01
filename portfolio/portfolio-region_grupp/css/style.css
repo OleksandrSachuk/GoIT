@@ -68,13 +68,13 @@ header {
   .menu__block .menu__block_logo {
     padding-top: 42px;
     float: left; }
-  .menu__block .menu__block_main-menu ul {
+  .menu__block .menu-default ul {
     list-style: none; }
-    .menu__block .menu__block_main-menu ul li {
+    .menu__block .menu-default ul li {
       display: inline-block;
       background: url("../images/menu/menu_devide.png") no-repeat right 57%;
       margin-left: -4px; }
-      .menu__block .menu__block_main-menu ul li a {
+      .menu__block .menu-default ul li a {
         display: block;
         text-decoration: none;
         color: #505050;
@@ -84,12 +84,59 @@ header {
         padding-bottom: 40px;
         padding-right: 24px;
         padding-left: 20px; }
-      .menu__block .menu__block_main-menu ul li a:hover {
+      .menu__block .menu-default ul li a:hover {
         background-color: #1abc9c; }
-    .menu__block .menu__block_main-menu ul li:first-child {
+    .menu__block .menu-default ul li:first-child {
       margin-left: 0px !important; }
-    .menu__block .menu__block_main-menu ul li:last-child {
+    .menu__block .menu-default ul li:last-child {
       background: none; }
+  .menu__block .menu-adaptive {
+    position: relative; }
+    .menu__block .menu-adaptive .menu__adaptive_button {
+      background-color: #000;
+      width: 40px;
+      height: 40px;
+      border: 1px solid white;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      float: right;
+      position: fixed;
+      top: 140px;
+      right: 10px;
+      cursor: pointer; }
+      .menu__block .menu-adaptive .menu__adaptive_button div {
+        width: 25px;
+        margin: 0 auto;
+        border: 1px solid white;
+        margin-top: 4px; }
+        .menu__block .menu-adaptive .menu__adaptive_button div:first-child {
+          margin-top: 13px; }
+    .menu__block .menu-adaptive nav {
+      display: none;
+      background-color: #000;
+      position: fixed;
+      top: 180px;
+      right: 0;
+      -webkit-border-radius: 10px;
+      border-radius: 10px; }
+      .menu__block .menu-adaptive nav ul {
+        list-style: none; }
+        .menu__block .menu-adaptive nav ul li a {
+          display: block;
+          text-decoration: none;
+          color: #fff;
+          font-size: 12px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-right: 20px;
+          padding-left: 20px; }
+        .menu__block .menu-adaptive nav ul li a:hover {
+          background-color: #1abc9c; }
+        .menu__block .menu-adaptive nav ul li:first-child {
+          margin-left: 0px !important; }
+        .menu__block .menu-adaptive nav ul li:last-child {
+          background: none;
+          padding-bottom: 20px; }
   .menu__block .menu__bottom {
     width: 100%;
     height: auto;
@@ -329,6 +376,16 @@ header {
         font-size: 10px; }
 
 /*footer end*/
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.9;
+  position: fixed;
+  bottom: 50px;
+  left: 10px;
+  display: none;
+  background: url("../images/icon_top.png") no-repeat; }
+
 @media screen and (max-width: 958px) {
   #header {
     text-align: center; }
@@ -347,7 +404,7 @@ header {
   .menu__block .menu__block_logo {
     width: 100%;
     text-align: center; }
-  .menu__block .menu__block_logo, .menu__block .menu__block_main-menu {
+  .menu__block .menu__block_logo, .menu__block .menu__block_main-menu .menu-default {
     width: 100%;
     text-align: center; }
   .our-services__block {
@@ -355,10 +412,6 @@ header {
   .greetings__block .greetings__block_info-1,
   .greetings__block .greetings__block_info-2, .greetings__block .greetings__block_info-3, .greetings__block .greetings__block_info-4 {
     margin-left: 0; } }
-
-@media screen and (max-width: 688px) {
-  .menu__block .menu__block_main-menu {
-    display: none; } }
 
 @media screen and (max-width: 666px) {
   .menu__block .menu__bottom {
