@@ -10,7 +10,7 @@ gulp.task('css', function () {
   return gulp.src('scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
-			browsers: ['last 2 versions'],
+			browsers: ['last 10 versions'],
 			cascade: false
 		}))
     // .pipe(csscomb())
@@ -34,6 +34,11 @@ gulp.task('watch', function() {
 	gulp.watch('scss/**/*.scss', ['css'])
 	gulp.watch('index.html', ['html'])
 });
+
+// gulp.task( 'csscombsass', function( ){
+//     return gulp.src('scss/**/*.scss')
+//     .pipe(csscomb())
+// } );
 
 // gulp.task( 'csscombsass', function( ){
 //     return gulp.src(['scss/**/*.scss'], {base: './'})
