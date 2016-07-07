@@ -9,17 +9,21 @@ jQuery(document).ready(function($) {
 		$("#menu").removeClass('menu-adaptive');
 	}
 
-	var flag=0;
+	
 
 	$(".menu__adaptive_button").click(function(event) {
 		 // Act on the event 
 		 
-		 if(flag==0) {
+		 var flag=0;
+
+		 if(flag == 0) {
 		 	$(".menu-adaptive nav").show();
+		 	$('.scrollup').hide();
 		 	flag = 1;
 		 } else if (flag == 1){
 		 	$(".menu-adaptive nav").hide();
-		 	flag=0;
+		 	$('.scrollup').show();
+		 	flag = 0;
 		 }
 		});
 		$(".menu-adaptive nav a").click(function(event) {
