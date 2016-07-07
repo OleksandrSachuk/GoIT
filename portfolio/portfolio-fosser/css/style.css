@@ -13,7 +13,6 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 html, body, .container {
@@ -38,55 +37,63 @@ img {
   margin: 0 auto; }
 
 /*header start*/
-header .container {
-  height: 56px;
+header {
+  height: auto;
   background-color: #2d3843; }
-  header .container .header__mail {
-    float: left; }
-    header .container .header__mail .fa-envelope {
-      margin-left: 30px;
-      margin-right: 18px;
-      line-height: 56px;
-      color: #6e7e8d; }
-    header .container .header__mail a {
-      font-family: "Roboto Medium";
-      font-size: 13px;
-      color: #fff;
-      text-decoration: none; }
-  header .container .header__telephone {
-    line-height: 56px;
-    float: right;
-    margin-right: 35px; }
-    header .container .header__telephone .fa-phone, header footer .container .header__telephone .footer__contacts .fa-envelope, footer header .container .header__telephone .footer__contacts .fa-envelope, header footer .container .footer__contacts .header__telephone .fa-envelope, footer header .container .footer__contacts .header__telephone .fa-envelope {
-      color: #6e7e8d;
-      margin-right: 23px; }
-    header .container .header__telephone .header__telephone_first, header .container .header__telephone .header__telephone_second {
-      font-family: "Roboto Medium";
-      font-size: 13px;
-      color: #fff; }
-    header .container .header__telephone .header__telephone_second {
-      margin-left: 15px; }
-  header .container button {
-    float: right;
-    width: 218px;
-    height: 100%;
-    border: 0;
-    background-color: #108fdc;
-    font-family: "Roboto Medium";
-    font-size: 13px;
-    color: #fff;
-    cursor: pointer; }
-  header .container .header__logo {
-    clear: both;
-    float: left;
-    margin-left: 14%;
-    line-height: 100px;
-    padding-top: 20px; }
-  header .container .header__menu {
-    float: right;
-    line-height: 120px; }
-    header .container .header__menu nav {
-      margin-right: 16%; }
+  header .container {
+    height: auto;
+    background-color: #2d3843; }
+    header .container .header__mail {
+      display: inline-block; }
+      header .container .header__mail .fa-envelope {
+        margin-left: 30px;
+        margin-right: 18px;
+        line-height: 56px;
+        color: #6e7e8d; }
+      header .container .header__mail a {
+        font-family: "Roboto Medium";
+        font-size: 13px;
+        color: #fff;
+        text-decoration: none; }
+    header .container .header__right {
+      float: right;
+      margin-top: -1px; }
+      header .container .header__right .header__telephone {
+        line-height: 56px;
+        display: inline-block;
+        margin-right: 35px; }
+        header .container .header__right .header__telephone .fa-phone, header footer .container .header__right .header__telephone .footer__contacts .fa-envelope, footer header .container .header__right .header__telephone .footer__contacts .fa-envelope, header footer .container .footer__contacts .header__right .header__telephone .fa-envelope, footer header .container .footer__contacts .header__right .header__telephone .fa-envelope {
+          color: #6e7e8d;
+          margin-right: 23px; }
+        header .container .header__right .header__telephone .header__telephone_first, header .container .header__right .header__telephone .header__telephone_second {
+          font-family: "Roboto Medium";
+          font-size: 13px;
+          color: #fff; }
+        header .container .header__right .header__telephone .header__telephone_second {
+          margin-left: 15px; }
+      header .container .header__right .header__button {
+        display: inline-block;
+        line-height: 56px;
+        margin-top: -1px; }
+        header .container .header__right .header__button button {
+          width: 218px;
+          padding-top: 22px;
+          padding-bottom: 21px;
+          border: 0;
+          background-color: #108fdc;
+          font-family: "Roboto Medium";
+          font-size: 13px;
+          color: #fff;
+          cursor: pointer; }
+    header .container .header__logo {
+      clear: both;
+      float: left;
+      margin-left: 1%;
+      line-height: 100px;
+      padding-top: 20px; }
+    header .container .header__menu {
+      float: right;
+      line-height: 120px; }
       header .container .header__menu nav ul {
         list-style: none; }
         header .container .header__menu nav ul li {
@@ -128,7 +135,6 @@ header .container {
       height: 54px;
       background-color: #108fdc;
       border: 0;
-      -webkit-border-radius: 25px;
       border-radius: 25px;
       margin-top: 62px;
       font-size: 13px;
@@ -148,7 +154,6 @@ header .container {
     margin: 0 30px 0 0;
     width: 16px;
     height: 16px;
-    -webkit-border-radius: 8px;
     border-radius: 8px;
     cursor: pointer;
     overflow: hidden;
@@ -180,11 +185,10 @@ header .container {
     .ourProduction .container .ourProduction__items .ourProduction__items_circle-left, .ourProduction .container .ourProduction__items .ourProduction__items_circle-right {
       width: 48px;
       height: 48px;
-      -webkit-border-radius: 50%;
       border-radius: 50%;
       border: 1px solid #abb2ba;
       cursor: pointer;
-      margin-left: 14%;
+      margin-left: 1%;
       text-align: center;
       float: left;
       margin-top: 185px; }
@@ -207,10 +211,8 @@ header .container {
       .ourProduction .container .ourProduction__items .ourProduction__items_item1 button, .ourProduction .container .ourProduction__items .ourProduction__items_item2 button, .ourProduction .container .ourProduction__items .ourProduction__items_item3 button, .ourProduction .container .ourProduction__items .ourProduction__items_item4 button {
         width: 211px;
         height: 57px;
-        -webkit-border-radius: 25px;
         border-radius: 25px;
         background-color: white;
-        -webkit-box-shadow: 0px 5px 24px 0px rgba(193, 202, 209, 0.47);
         box-shadow: 0px 5px 24px 0px rgba(193, 202, 209, 0.47);
         margin-top: 30px;
         cursor: pointer;
@@ -222,7 +224,7 @@ header .container {
     .ourProduction .container .ourProduction__items .ourProduction__items_circle-right {
       float: right;
       margin-left: 0;
-      margin-right: 10%; }
+      margin-right: 1%; }
       .ourProduction .container .ourProduction__items .ourProduction__items_circle-right:hover {
         border: 1px solid #363636; }
   .ourProduction .container button {
@@ -230,7 +232,6 @@ header .container {
     background-color: #108fdc;
     width: 238px;
     height: 54px;
-    -webkit-border-radius: 25px;
     border-radius: 25px;
     font-size: 13px;
     font-family: "Roboto Bold";
@@ -256,7 +257,7 @@ header .container {
     float: right;
     background-color: #e8f1fa; }
     .aboutCompany .container .aboutCompany__info h4 {
-      padding-top: 114px;
+      padding-top: 20px;
       padding-left: 110px;
       font-size: 25px;
       font-family: "Roboto Bold";
@@ -272,12 +273,10 @@ header .container {
         padding-top: 50px; }
     .aboutCompany .container .aboutCompany__info button {
       background-color: #108fdc;
-      -webkit-box-shadow: 0px 0px 51px 0px rgba(193, 202, 209, 0.26);
       box-shadow: 0px 0px 51px 0px rgba(193, 202, 209, 0.26);
       width: 188px;
       height: 56px;
       border: 0;
-      -webkit-border-radius: 25px;
       border-radius: 25px;
       font-size: 13px;
       font-family: "Roboto Regular";
@@ -285,12 +284,13 @@ header .container {
       cursor: pointer;
       margin-top: 60px;
       margin-left: 110px;
-      margin-bottom: 180px; }
+      margin-bottom: 57px; }
 
 /*About company end*/
 /* Comments start*/
 .comments {
-  clear: both; }
+  clear: both;
+  margin-top: -1px; }
   .comments .container {
     background: url("../img/comments_bg.png") no-repeat;
     background-size: cover;
@@ -306,11 +306,10 @@ header .container {
       .comments .container .comments__items .comments__items_circle-left, .comments .container .comments__items .comments__items_circle-right {
         width: 48px;
         height: 48px;
-        -webkit-border-radius: 50%;
         border-radius: 50%;
         border: 1px solid #fff;
         cursor: pointer;
-        margin-left: 270px;
+        margin-left: 1%;
         margin-right: 65px;
         text-align: center;
         float: left;
@@ -326,7 +325,6 @@ header .container {
         width: 350px;
         height: 365px;
         background-color: #fff;
-        -webkit-border-radius: 20px;
         border-radius: 20px;
         text-align: center;
         position: relative;
@@ -354,8 +352,7 @@ header .container {
           padding-left: 30px;
           padding-right: 30px; }
       .comments .container .comments__items .comments__items_circle-right {
-        margin-left: 85px;
-        margin-right: 270px;
+        margin-right: 1%;
         float: right; }
 
 /*News start*/
@@ -380,7 +377,6 @@ header .container {
       height: 390px;
       display: inline-block;
       vertical-align: top;
-      -webkit-border-radius: 10px;
       border-radius: 10px;
       background-color: #e8f1fa;
       text-align: left; }
@@ -388,9 +384,7 @@ header .container {
         height: 236px;
         background: url("../img/news__items_item1.png") no-repeat right;
         background-size: cover;
-        -webkit-border-top-left-radius: 10px;
         border-top-left-radius: 10px;
-        -webkit-border-top-right-radius: 10px;
         border-top-right-radius: 10px; }
       .news .container .news__items .news__items_item1 .news__items_item2-img, .news .container .news__items .news__items_item2 .news__items_item2-img, .news .container .news__items .news__items_item3 .news__items_item2-img {
         background: url("../img/news__items_item2.png") no-repeat right; }
@@ -420,7 +414,6 @@ header .container {
     width: 238px;
     height: 54px;
     border: 0;
-    -webkit-border-radius: 25px;
     border-radius: 25px;
     margin-top: 90px;
     font-size: 13px;
@@ -449,7 +442,6 @@ header .container {
         padding-bottom: 22px;
         padding-left: 30px;
         border: 0;
-        -webkit-border-radius: 30px;
         border-radius: 30px; }
       .news .news__form .news__form_input .fa-paper-plane {
         position: absolute;
@@ -480,7 +472,6 @@ footer {
         color: white;
         line-height: 3.692; }
       footer .container .footer__left .footer__left_facebook, footer .container .footer__left .footer__left_google {
-        -webkit-border-radius: 50%;
         border-radius: 50%;
         background-color: #3f4f5d;
         width: 40px;
@@ -552,7 +543,6 @@ footer {
   width: 50px;
   height: 50px;
   border: 1px solid #6e7e8d;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   position: fixed;
   bottom: 110px;
