@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/ClearHTML5.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link rel="stylesheet" href="owl.carousel.2.1.0/owl.carousel.min.css">
+	<link rel="stylesheet" href="owl.carousel.2.1.0/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Fosser</title>
 </head>
@@ -55,30 +57,28 @@
 	</header>
 	<!--header end-->
 
-	<section>
+	<section class="carousel">
 		<div class="container">
-			<div class="slider">
-				<ul>
-					<li>
-						<img src="img/carousel__photo1.png" alt="" />
-					</li>
-					<li>
-						<img src="img/carousel__photo2.png" alt="" />
-					</li>
-					<li>
-						<img src="img/carousel__photo3.png" alt="" />
-					</li>
-				</ul>
-				<div class="slider__text">
-					<h1>
-						FOSSER - НАДЁЖНОЕ МАСЛО
-						<br>
-						<span class="slider__text_second">ДЛЯ ЖЕЛЕЗНЫХ КОНЕЙ</span>
-					</h1>
-					<button id="test">ПОДОБРАТЬ МАСЛО</button>
-				</div>
+			<div class="owl-carousel">
+				<div>
+					<img src="img/carousel__photo1.png" height="800px" width="1920px"></div>
+
+				<div>
+					<img src="img/carousel__photo1.png" height="800px" width="1920px"></div>
+				<div>
+					<img src="img/carousel__photo1.png" height="800px" width="1920px"></div>
+			</div>
+
+			<div class="carousel__text">
+				<h1>
+					FOSSER - НАДЁЖНОЕ МАСЛО
+					<br>
+					<span class="carousel__text_second">ДЛЯ ЖЕЛЕЗНЫХ КОНЕЙ</span>
+				</h1>
+				<button id="test">ПОДОБРАТЬ МАСЛО</button>
 			</div>
 		</div>
+
 	</section>
 	<!--content start-->
 	<section class="ourProduction">
@@ -316,8 +316,12 @@
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<script src="js/jquery-2.2.0.min.js"></script>
-	<script src="js/slider.js"></script>
-	<script src="js/scrollup.js"></script>
-	<script src="js/main.js"></script>
+	<!-- <script src="js/slider.js"></script>
+-->
+<script src="js/scrollup.js"></script>
+<script src="js/main.js"></script>
+
+<script src="owl.carousel.2.1.0/owl.carousel.min.js"></script>
+<script src="owl.carousel.2.1.0/owl.carousel.settings.js"></script>
 </body>
 </html>

@@ -13,6 +13,7 @@
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 html, body, .container {
@@ -105,31 +106,29 @@ header .container {
               background: url("../img/header__menu_hover.png") no-repeat bottom center; }
 
 /*header end*/
-section .container .slider {
-  z-index: 9;
-  width: 1920px;
-  height: 1066px;
-  overflow: hidden;
-  margin: 0 0 7px;
-  position: relative;
-  margin-top: 20px; }
-  section .container .slider .slider__text {
+.carousel {
+  clear: both;
+  position: relative; }
+  .carousel .carousel__text {
     position: absolute;
     top: 28%;
-    left: 37.5%; }
-    section .container .slider .slider__text h1 {
+    left: 50%;
+    margin-left: -220px;
+    z-index: 100; }
+    .carousel .carousel__text h1 {
       font-size: 35px;
       font-family: "Roboto Bold";
       color: #fff;
       line-height: 1.571; }
-      section .container .slider .slider__text h1 .slider__text_second {
+      .carousel .carousel__text h1 .carousel__text_second {
         position: absolute;
         left: 8%; }
-    section .container .slider .slider__text button {
+    .carousel .carousel__text button {
       width: 238px;
       height: 54px;
       background-color: #108fdc;
       border: 0;
+      -webkit-border-radius: 25px;
       border-radius: 25px;
       margin-top: 62px;
       font-size: 13px;
@@ -140,38 +139,23 @@ section .container .slider {
       position: absolute;
       left: 28%; }
 
-section .container .slider ul, section .container .slider li {
-  padding: 0;
-  margin: 0;
-  list-style-type: none; }
-
-section .container .slider ul {
-  width: 9999px; }
-
-section .container .slider ul li {
-  list-style-type: none;
-  float: left;
-  width: 1920px;
-  height: 1066px; }
-
-section .container .slider .nav {
+.owl-dots {
   position: absolute;
   left: 48%;
   bottom: 12%; }
-
-section .container .slider .nav span {
-  background: #c5c8cc;
-  margin: 0 30px 0 0;
-  width: 16px;
-  height: 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  overflow: hidden;
-  display: block;
-  float: left; }
-
-section .container .slider .nav span.on {
-  background: #108fdc; }
+  .owl-dots .owl-dot {
+    background: #c5c8cc;
+    margin: 0 30px 0 0;
+    width: 16px;
+    height: 16px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    display: block;
+    float: left; }
+  .owl-dots .active {
+    background: #108fdc; }
 
 /*Our production start*/
 .ourProduction .container {
@@ -196,6 +180,7 @@ section .container .slider .nav span.on {
     .ourProduction .container .ourProduction__items .ourProduction__items_circle-left, .ourProduction .container .ourProduction__items .ourProduction__items_circle-right {
       width: 48px;
       height: 48px;
+      -webkit-border-radius: 50%;
       border-radius: 50%;
       border: 1px solid #abb2ba;
       cursor: pointer;
@@ -222,8 +207,10 @@ section .container .slider .nav span.on {
       .ourProduction .container .ourProduction__items .ourProduction__items_item1 button, .ourProduction .container .ourProduction__items .ourProduction__items_item2 button, .ourProduction .container .ourProduction__items .ourProduction__items_item3 button, .ourProduction .container .ourProduction__items .ourProduction__items_item4 button {
         width: 211px;
         height: 57px;
+        -webkit-border-radius: 25px;
         border-radius: 25px;
         background-color: white;
+        -webkit-box-shadow: 0px 5px 24px 0px rgba(193, 202, 209, 0.47);
         box-shadow: 0px 5px 24px 0px rgba(193, 202, 209, 0.47);
         margin-top: 30px;
         cursor: pointer;
@@ -243,6 +230,7 @@ section .container .slider .nav span.on {
     background-color: #108fdc;
     width: 238px;
     height: 54px;
+    -webkit-border-radius: 25px;
     border-radius: 25px;
     font-size: 13px;
     font-family: "Roboto Bold";
@@ -284,10 +272,12 @@ section .container .slider .nav span.on {
         padding-top: 50px; }
     .aboutCompany .container .aboutCompany__info button {
       background-color: #108fdc;
+      -webkit-box-shadow: 0px 0px 51px 0px rgba(193, 202, 209, 0.26);
       box-shadow: 0px 0px 51px 0px rgba(193, 202, 209, 0.26);
       width: 188px;
       height: 56px;
       border: 0;
+      -webkit-border-radius: 25px;
       border-radius: 25px;
       font-size: 13px;
       font-family: "Roboto Regular";
@@ -316,6 +306,7 @@ section .container .slider .nav span.on {
       .comments .container .comments__items .comments__items_circle-left, .comments .container .comments__items .comments__items_circle-right {
         width: 48px;
         height: 48px;
+        -webkit-border-radius: 50%;
         border-radius: 50%;
         border: 1px solid #fff;
         cursor: pointer;
@@ -335,6 +326,7 @@ section .container .slider .nav span.on {
         width: 350px;
         height: 365px;
         background-color: #fff;
+        -webkit-border-radius: 20px;
         border-radius: 20px;
         text-align: center;
         position: relative;
@@ -388,6 +380,7 @@ section .container .slider .nav span.on {
       height: 390px;
       display: inline-block;
       vertical-align: top;
+      -webkit-border-radius: 10px;
       border-radius: 10px;
       background-color: #e8f1fa;
       text-align: left; }
@@ -395,7 +388,9 @@ section .container .slider .nav span.on {
         height: 236px;
         background: url("../img/news__items_item1.png") no-repeat right;
         background-size: cover;
+        -webkit-border-top-left-radius: 10px;
         border-top-left-radius: 10px;
+        -webkit-border-top-right-radius: 10px;
         border-top-right-radius: 10px; }
       .news .container .news__items .news__items_item1 .news__items_item2-img, .news .container .news__items .news__items_item2 .news__items_item2-img, .news .container .news__items .news__items_item3 .news__items_item2-img {
         background: url("../img/news__items_item2.png") no-repeat right; }
@@ -425,6 +420,7 @@ section .container .slider .nav span.on {
     width: 238px;
     height: 54px;
     border: 0;
+    -webkit-border-radius: 25px;
     border-radius: 25px;
     margin-top: 90px;
     font-size: 13px;
@@ -453,6 +449,7 @@ section .container .slider .nav span.on {
         padding-bottom: 22px;
         padding-left: 30px;
         border: 0;
+        -webkit-border-radius: 30px;
         border-radius: 30px; }
       .news .news__form .news__form_input .fa-paper-plane {
         position: absolute;
@@ -483,6 +480,7 @@ footer {
         color: white;
         line-height: 3.692; }
       footer .container .footer__left .footer__left_facebook, footer .container .footer__left .footer__left_google {
+        -webkit-border-radius: 50%;
         border-radius: 50%;
         background-color: #3f4f5d;
         width: 40px;
@@ -554,13 +552,15 @@ footer {
   width: 50px;
   height: 50px;
   border: 1px solid #6e7e8d;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   position: fixed;
   bottom: 110px;
   right: 110px;
   display: none;
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 1000; }
   .scrollup .fa-long-arrow-up {
     font-size: 13px;
     color: #6e7e8d;
